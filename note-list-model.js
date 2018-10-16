@@ -1,3 +1,5 @@
+import {isTrue} from './assert';
+
 (function(exports) {
   function NotesList() {
     this.list = []

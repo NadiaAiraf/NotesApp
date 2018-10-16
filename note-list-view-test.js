@@ -1,3 +1,5 @@
+import { assert } from 'assert';
+
 (function(exports) {
   function testListModel() {
     var notesList = new NotesList();

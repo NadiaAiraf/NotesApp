@@ -1,14 +1,14 @@
-(function(exports) {
-  function testNoteModel() {
-    var note = new Notes('java sucks')
-    assert.isTrue(note.note === 'java sucks')
-  };
+import { Notes } from './note-model'
 
-  function testReturnText() {
-    var note = new Notes('text')
-    assert.isTrue(note.returnText() === 'text')
-  }
+function testNoteModel() {
+  var note = new Notes('java sucks')
+  assert.isTrue(note.note === 'java sucks')
+};
 
-  testReturnText();
-  testNoteModel();
-})(this)
+function testReturnText() {
+  var note = new Notes('text')
+  assert.isTrue(note.returnText() === 'text')
+}
+
+testReturnText();
+testNoteModel();
