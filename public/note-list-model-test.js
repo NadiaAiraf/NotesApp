@@ -1,8 +1,8 @@
 (function(exports) {
+
   function testList() {
     var noteList = new NotesList();
     assert.isTrue(noteList.list[0] === undefined && Array.isArray(noteList.list))
-
   }
 
   function testStoreNote() {

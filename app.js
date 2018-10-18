@@ -4,9 +4,8 @@ const port = 3000;
 var path = require('path');
 
 app.set('view engine','ejs')
-app.use(express.static(__dirname + '/'));
+app.use(express.static('public'))
 
-
-app.get('/', (req, res) => res.sendFile(path.join(__dirname+'/note-model.html')));
+app.get('/', (req, res) => res.sendFile(__dirname +'/note-model.html'));
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

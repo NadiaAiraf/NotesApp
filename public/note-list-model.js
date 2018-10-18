@@ -13,9 +13,10 @@ import {isTrue} from './assert';
     return this.list
   };
 
+//
   NotesList.prototype.createAndStoreNote = function (text) {
     this.list.push(new Notes(text))
-  };
+  };//
 
   exports.NotesList = NotesList;
 })(this);
